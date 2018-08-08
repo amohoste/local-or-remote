@@ -1,0 +1,19 @@
+{
+  "name": "local-or-remote",
+  "version": "0.0.0",
+  "description": "Fetches a local or remote resource",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amohoste/local-or-remote.git"
+  },
+  "author": "Amory Hoste <amory.hoste@ugent.be> (https://amoryhoste.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amohoste/local-or-remote/issues"
+  },
+  "homepage": "https://github.com/amohoste/local-or-remote#readme"
+}
