@@ -1,6 +1,6 @@
 {
   "name": "local-or-remote",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Fetches a local or remote resource",
   "main": "index.js",
   "scripts": {
