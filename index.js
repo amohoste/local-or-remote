@@ -10,7 +10,13 @@ module.exports = function loadfile(path) {
             if (!download_url) {
                 reject(`Url ${download_url.href} isn't a valid url`);
             } else {
-                return request(download_url.href).then(body => {
+                var options = {
+                    url: 'download_url.href,
+                    headers: {
+                        'User-Agent': 'request'
+                    }
+                };
+                return request(options).then(body => {
                    resolve(body);
                 }).catch((error) => {
                     console.log(error);
