@@ -19,7 +19,7 @@ module.exports = function loadfile(path) {
                 return request(options).then(body => {
                    resolve(body);
                 }).catch((error) => {
-                    reject(`Can't resolve url ${download_url.href}`);
+                    reject(`Can't resolve url ${download_url.href} - ${error.statusCode}`);
                 })
             }
         } else {
