@@ -1,10 +1,17 @@
 # local-or-remote
-Fetches a local or remote resource
+Fetches a local or remote (http) resource
 
-## Example usage
+## Installing
+```
+npm install --save local-or-remote
+```
+
+## Usage
 
 ```javascript
-loadFile(program.jsonFile).then((data) => {
+const loadFile = require('local-or-remote')
+
+loadFile(resource).then((data) => {
 	console.log(data);
 });
 ```
