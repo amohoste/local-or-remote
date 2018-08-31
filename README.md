@@ -11,7 +11,8 @@ npm install --save local-or-remote
 ```javascript
 const loadFile = require('local-or-remote')
 
-loadFile(resource).then((data) => {
+loadFile(resource, timeout).then((data) => {
 	console.log(data);
 });
 ```
+- `timeout` (opt.): integer containing the number of milliseconds to wait for a server to send response headers before aborting the request (if fetched from a remote resource). Default: 20000.

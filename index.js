@@ -2,7 +2,7 @@ const url = require('url');
 const fs = require('fs-extra');
 const request = require('request-promise-native');
 
-module.exports = function loadfile(path) {
+module.exports = function loadfile(path, timeOut=20000) {
     return new Promise((resolve, reject) => {
 
         if (path.startsWith('http') || path.startsWith('https')) {
@@ -12,6 +12,7 @@ module.exports = function loadfile(path) {
             } else {
                 const options = {
                     url: download_url.href,
+                    timeout: timeOut,
                     headers: {
                         'User-Agent': 'request'
                     }
