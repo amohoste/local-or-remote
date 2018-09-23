@@ -2,7 +2,7 @@ const url = require('url');
 const fs = require('fs-extra');
 const request = require('request-promise-native');
 
-module.exports = function loadfile(path, timeOut=20000) {
+module.exports = function loadfile(path, timeOut=60000) {
     return new Promise((resolve, reject) => {
 
         if (path.startsWith('http') || path.startsWith('https')) {
